@@ -94,12 +94,13 @@ fieldset legend {
 .input-wrapper label span {
   margin-left: 12px;
 
-  color: #c1bccc;
+  color: #6c6a71;
   font-size: 12px;
   line-height: 20px;
 }
 
-.input-wrapper input {
+.input-wrapper input,
+.input-wrapper select {
   background: #fafafc;
   width: 608px;
   height: 56px;
@@ -116,12 +117,60 @@ fieldset legend {
 }
 
 .input-wrapper select {
+  appearance: none;
+}
+
+/* CAMPO PRIVACIDADE */
+fieldset#privacy {
+  margin-top: 48px;
+}
+
+.input-privacy {
+  margin-top: 24px;
+}
+
+/* CAMPO DATA */
+fieldset#date{
+  margin-top: 48px;
+}
+
+div#date {
+  margin-top: 24px;
+  display: flex;
+  gap: 20px;
+}
+
+#input-date {
   background: #fafafc;
-  width: 608px;
-  height: 56px;
   border: 1px solid #e6e6f0;
   border-radius: 8px;
   padding: 0 24px;
   font-size: 12px;
   line-height: 26px;
+}
+
+.input-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-date input {
+  width: 312px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+  text-align: center;
+  font-size: 16px;
+}
+
+#initial-hour,
+#final-hour {
+  width: 128px;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
 }
