@@ -23,78 +23,84 @@
     
         <form>
 
-            <fieldset>
-                <legend>Informações do Evento</legend>
+            <div id="wrapper">
+                <fieldset>
+                    <legend>Informações do Evento</legend>
 
-                <div class="input-wrapper">
-                    <label for="event-title">Título do Evento<span>(mínimo 8 caracteres)</span></label>
-                    <input type="text" id="event-title" />
-                </div>
+                    <div class="input-wrapper">
+                        <label for="event-title">Título do Evento<span>(mínimo 8 caracteres)</span></label>
+                        <input type="text" id="event-title" />
+                    </div>
 
-                <div class="input-wrapper">
-                    <label for="event-link">Link do Evento<span>(comece com https://)</span></label>
-                    <input type="url" id="event-link" />
-                </div>
+                    <div class="input-wrapper">
+                        <label for="event-link">Link do Evento<span>(comece com https://)</span></label>
+                        <input type="url" id="event-link" />
+                    </div>
 
-                <div class="input-wrapper">
-                    <label for="whatsapp">Whatsapp para Contato<span>(somente números)</span></label>
-                    <input type="number" id="whatsapp" />
-                </div>
+                    <div class="input-wrapper">
+                        <label for="whatsapp">Whatsapp para Contato<span>(somente números)</span></label>
+                        <input type="number" id="whatsapp" />
+                    </div>
 
-                <div class="input-wrapper">
-                    <label for="infos-extras">Informações Extras</label>
-                    <textarea id="infos-extras" ></textarea>
-                </div>
+                    <div class="input-wrapper">
+                        <label for="infos-extras">Informações Extras</label>
+                        <textarea id="infos-extras" ></textarea>
+                    </div>
 
-                <div class="input-wrapper">
-                    <label for="categoria">Categoria</label>
-                    <select id="categoria" >
-                        <option value="live">Ao Vivo</option>
-                        <option value="podcast">Podcast</option>
-                        <option value="mentorship">Mentoria</option>
-                    </select>
-                </div>
-            </fieldset>
-            
-            <fieldset id="privacy">
-                <legend>Privacidade</legend>
-
-                <div class="input-wrapper">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" />
-                </div>
-
-                <div class="input-wrapper">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" />
-                </div>
+                    <div class="input-wrapper">
+                        <label for="categoria">Categoria</label>
+                        <select id="categoria" >
+                            <option value="live">Ao Vivo</option>
+                            <option value="podcast">Podcast</option>
+                            <option value="mentorship">Mentoria</option>
+                        </select>
+                    </div>
+                </fieldset>
                 
-                <div class="input-privacy">
-                    <input type="checkbox" id="event-privacy" />
-                    <label for="event-privacy">Evento Privado</label>
+                <fieldset id="privacy">
+                    <legend>Privacidade</legend>
+
+                    <div class="input-wrapper">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" />
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" />
+                    </div>
                     
-                </div>
-            </fieldset>
-
-            <fieldset id="date">
-                <legend>Data</legend>
-
-                <div id="date">
-                    <div class="input-date">
-                        <label for="event-date">Data</label>
-                        <input type="date" id="event-date" />
+                    <div class="input-privacy">
+                        <input type="checkbox" id="event-privacy" />
+                        <label for="event-privacy">Evento Privado</label>
+                        
                     </div>
-                    <div class="input-date">
-                        <label for="email">Data</label>
-                        <input type="time" id="initial-hour" />
-                    </div>
-                    <div class="input-date">
-                        <label for="email">Data</label>
-                        <input type="time" id="final-hour" />
-                    </div>
-                </div>
+                </fieldset>
 
-            </fieldset>
+                <fieldset id="date">
+                    <legend>Data</legend>
+
+                    <div id="date">
+                        <div class="input-date">
+                            <label for="event-date">Data</label>
+                            <input type="date" id="event-date" />
+                        </div>
+                        <div class="input-date">
+                            <label for="initial-hour">Data</label>
+                            <input type="time" id="initial-hour" />
+                        </div>
+                        <div class="input-date">
+                            <label for="final-hour">Data</label>
+                            <input type="time" id="final-hour" />
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+
+            <div id="down">
+                <button id="save">Salvar evento</button>
+            </div>
 
         </form>
     </div>

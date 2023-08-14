@@ -53,7 +53,8 @@ header p {
   line-height: 26px;
 }
 
-form {
+/* FORM */
+#wrapper {
   border-radius: 8px;
   margin-top: 38px;
   background: #fafafc;
@@ -130,7 +131,7 @@ fieldset#privacy {
 }
 
 /* CAMPO DATA */
-fieldset#date{
+fieldset#date {
   margin-top: 48px;
 }
 
@@ -173,4 +174,28 @@ input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
+}
+
+/* CAMPO BOTÃO */
+#down {
+  height: 136px;
+  border-radius: 0px 0px 8px 8px;
+  background: #f0f0f4;
+  padding: 40px 64px;
+}
+
+button#save {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 8px;
+  background: #04d361;
+  border: none;
+
+  color: #fff;
+  font-family: Archivo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
 }
