@@ -199,3 +199,12 @@ button#save {
   font-weight: 600;
   line-height: 26px;
 }
+
+button#save:hover{
+  background-color: #168648;
+}
+
+/* VALIDAÇÂO */
+input:invalid{
+  border: 1px solid #FF1010;
+}
